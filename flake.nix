@@ -51,7 +51,6 @@
     , devshell
     , treefmt
     , spacebar
-    , work
     , flake-utils
     , ...
     }:
@@ -146,8 +145,11 @@
 
       darwinConfigurations = {
         work = mkDarwinConfig {
-          extraModules = work.systemModules ++
-            [ ./modules/darwin/apps.nix ];
+          extraModules =
+            [
+              inputs.work.nixosModules.work
+              ./modules/darwin/apps.nix
+            ];
         };
       };
 
@@ -156,7 +158,7 @@
       homeConfigurations = {
         work = mkHomeConfig {
           username = "sarah";
-          extraModules = work.homeManagerModules;
+          extraModules = [ inputs.work.hmModule ];
         };
       };
     } //
