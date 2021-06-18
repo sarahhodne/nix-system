@@ -35,5 +35,7 @@
   };
 
   system.keyboard.enableKeyMapping = true;
-  system.keyboard.nonUS.remapTilde = true;
+  system.keyboard.userKeyMapping = [
+    { HIDKeyboardModifierMappingSrc = 30064771125; HIDKeyboardModifierMappingDst = 30064771172; }
+  ];
 }
