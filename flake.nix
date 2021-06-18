@@ -21,6 +21,8 @@
     treefmt.url = "github:numtide/treefmt";
     spacebar.url = "github:cmacrae/spacebar/v1.3.0";
 
+    work.url = "git+https://github.com/circleci/sarahhodne-nix.git?ref=main";
+
     flake-compat = {
       url = "github:edolstra/flake-compat";
       flake = false;
@@ -49,6 +51,7 @@
     , devshell
     , treefmt
     , spacebar
+    , work
     , flake-utils
     , ...
     }:
@@ -143,8 +146,8 @@
 
       darwinConfigurations = {
         work = mkDarwinConfig {
-          extraModules =
-            [ ./profiles/work.nix ./modules/darwin/apps.nix ];
+          extraModules = work.systemModules ++
+            [ ./modules/darwin/apps.nix ];
         };
       };
 
@@ -153,7 +156,7 @@
       homeConfigurations = {
         work = mkHomeConfig {
           username = "sarah";
-          extraModules = [ ./profiles/home-manager/work.nix ];
+          extraModules = work.homeManagerModules;
         };
       };
     } //

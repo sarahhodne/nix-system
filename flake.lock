@@ -287,7 +287,8 @@
         "nixpkgs": "nixpkgs",
         "spacebar": "spacebar",
         "stable": "stable",
-        "treefmt": "treefmt"
+        "treefmt": "treefmt",
+        "work": "work"
       }
     },
     "spacebar": {
@@ -344,6 +345,22 @@
         "owner": "numtide",
         "repo": "treefmt",
         "type": "github"
+      }
+    },
+    "work": {
+      "locked": {
+        "lastModified": 1623977970,
+        "narHash": "sha256-PNtcyV+PLUrP2lpd4zsYF4pNzkiI+eNesgvDHH7XE5A=",
+        "ref": "main",
+        "rev": "8e5c6fa3a87b27ecd3b5ae932455a1e0879ef989",
+        "revCount": 2,
+        "type": "git",
+        "url": "https://github.com/circleci/sarahhodne-nix.git"
+      },
+      "original": {
+        "ref": "main",
+        "type": "git",
+        "url": "https://github.com/circleci/sarahhodne-nix.git"
       }
     }
   },
