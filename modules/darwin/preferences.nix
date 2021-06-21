@@ -33,9 +33,4 @@
       expose-animation-duration = "0.1";
     };
   };
-
-  system.keyboard.enableKeyMapping = true;
-  system.keyboard.userKeyMapping = [
-    { HIDKeyboardModifierMappingSrc = 30064771125; HIDKeyboardModifierMappingDst = 30064771172; }
-  ];
 }
