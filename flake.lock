@@ -349,11 +349,11 @@
     },
     "work": {
       "locked": {
-        "lastModified": 1623991286,
-        "narHash": "sha256-a9TB4iYa0rhlrN9X+z+HZlFWqD6K04Tux0gvURVIPAw=",
+        "lastModified": 1624537899,
+        "narHash": "sha256-U1Sle1dP1HPIAdRGIYW7xGWQLKU6e3H0/UL650OA4VQ=",
         "ref": "main",
-        "rev": "9182abb65f035e618b948b5178e3f8a50e971216",
-        "revCount": 6,
+        "rev": "5e2a3f4181bec500d8bc575e804f52b9f1904a73",
+        "revCount": 13,
         "type": "git",
         "url": "https://github.com/circleci/sarahhodne-nix.git"
       },
