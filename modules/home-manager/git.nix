@@ -5,7 +5,7 @@
 
     userName = "Sarah Hodne";
     signing = {
-      key = "B0520BCBBDEABF81C9635C5C3DA3FED989CCEE3C";
+      key = "15AA147F88B4C1F578E353B8F625971C87F922D7";
       signByDefault = true;
     };
 
